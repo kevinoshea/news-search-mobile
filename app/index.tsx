@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import NewsSearch from "./NewsSearch";
+import NewsSearch from "./NewsSearch/NewsSearch";
 import { FC } from "react";
 
 const styles = StyleSheet.create({
