@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
  * Main News Search component containing the search bar and results.
  */
 const NewsSearch = () => {
-    const [queryText, setQueryText] = useState('Apple');
+    const [queryText, setQueryText] = useState('');
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
     const [results, setResults] = useState(null);
