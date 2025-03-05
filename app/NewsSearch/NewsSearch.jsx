@@ -38,21 +38,14 @@ const NewsSearch = () => {
         }
     };
 
-    const SearchBar = () => {
-        const placeholder = "Search for news articles...";
-        return (
+    return (
+        <View style={styles.container}>
             <TextInput
                 style={styles.searchBar}
-                placeholder={placeholder}
+                placeholder="Search for news articles..."
                 onChangeText={setQueryText}
                 onSubmitEditing={search}
                 value={queryText} />
-        );
-    }
-
-    return (
-        <View style={styles.container}>
-            <SearchBar />
             <Button disabled={queryText.length < 3} onPress={search} title="Search" />
             <SearchResults loading={loading} error={error} results={results} />
         </View>
